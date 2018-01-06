@@ -2,7 +2,6 @@
 using namespace std;
 
 int main() {
-    char x = 'a';
-
+    wchar_t x = 'a';
     cout<<(char)(x+5)<<endl;
 }
