@@ -2,15 +2,15 @@
 using namespace std;
 
 int main() {
-    typedef double vars;
-    using something = int;
+    typedef double vars_t;
+    using something_type = int;
 
-    constexpr something dwiedwojki = 22;
-    volatile something jestniema = 32;
+    constexpr something_type dwiedwojki = 22;
+    volatile something_type jestniema = 32;
     using wsp = int;
     
-    vars x =10.5;
-    vars y = 12.0;
+    vars_t x =10.5;
+    vars_t y = 12.0;
     wsp z = 20;
 
     cout<<(((x*y)/z) * dwiedwojki)/jestniema
