@@ -17,4 +17,10 @@ int main() {
 
     // ???
     // const_cast<int>(varMemAddr) = &var;
+
+    short int x = 0x00;
+    short int y = 0x00;
+    cout << (x | y) << endl;
+
+    cout << (x && y ) << endl;
 }
