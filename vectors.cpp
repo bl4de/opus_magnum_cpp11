@@ -21,7 +21,7 @@ int main() {
   cout << endl;
 
   for (auto girl : fitgurls) {
-    cout << "\nFitGurl " << i << " : " << fitgurls[i];
+    cout << "\nFitGurl : " << girl;
   }
 
   cout << endl;
