@@ -20,5 +20,10 @@ int main() {
   }
   cout << endl;
 
+  for (auto girl : fitgurls) {
+    cout << "\nFitGurl " << i << " : " << fitgurls[i];
+  }
+
+  cout << endl;
   exit(0);
 }
