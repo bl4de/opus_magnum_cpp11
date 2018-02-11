@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int pow(int podst, int wykl) {
+auto pow(int podst, int wykl) -> decltype(podst) {
     int wynik = podst;
     while (--wykl) wynik *= podst;
     return wynik;
