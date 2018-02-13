@@ -6,15 +6,18 @@
 using namespace std;
 using namespace oposy;
 
-constexpr int fn(int, int);
+constexpr int fn(int x, int y) { return x * y; }
 
 int main() {
   constexpr int x = 20;
   constexpr int y = 20;
 
-  int wyn = fn(x, y);
+  constexpr int wyn = fn(x, y);
 
   valueOf(wyn);
-}
 
-constexpr int fn(int x, int y) { return x * y; }
+  int z = 23;
+  int r = 44;
+
+  valueOf(fn(z, r));
+}
