@@ -19,6 +19,6 @@ int main() {
 
     for (int i = 0; i < 5; i++) {
         valueOf(tab[i]);
-        valueOf(&tab[i])
+        memoryOf(&tab[i]);
     }
 }

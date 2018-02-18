@@ -12,6 +12,11 @@ void message(std::string msg) { std::cout << msg << std::endl; }
 void valueOf(int var, std::string msg = "value of") {
   std::cout << msg << ": " << var << std::endl;
 }
+
+// shows memory address of variable
+void memoryOf(int* var, std::string msg = "memory address") {
+  std::cout << msg << ": " << var << std::endl;
+}
 } // namespace oposy
 
 #endif
