@@ -13,7 +13,7 @@ void podw(int tab[], int s) {
 }
 
 int main() {
-    constexpr int tabSize = 5;
+    const int tabSize = 5;
 
     int tab[tabSize]{1,2,3,4,5};
 
