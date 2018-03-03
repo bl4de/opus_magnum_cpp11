@@ -25,5 +25,5 @@ int main() {
     valueOf(tab[i]);
   }
 
-  delete tab;
+  delete [] tab;
 }
