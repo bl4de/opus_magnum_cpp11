@@ -24,4 +24,6 @@ int main() {
   for (int i = 0; i < rozm; i++) {
     valueOf(tab[i]);
   }
+
+  delete tab;
 }
