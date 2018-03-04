@@ -11,7 +11,7 @@ int main() {
   message("podaj rozmiar tablicy: ");
   cin >> rozm;
 
-  int *tab = new int[rozm];
+  auto *tab = new int[rozm]{};
   auto *wsk = tab;
   int x = 0;
 
