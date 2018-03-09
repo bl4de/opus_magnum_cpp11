@@ -18,12 +18,8 @@ int bar() {
 
 int main() {
   int (*wsk)() = nullptr;
-
   wsk = &foo;
-
   (*wsk)();
-
   wsk = &bar;
-
   (*wsk)();
 }
