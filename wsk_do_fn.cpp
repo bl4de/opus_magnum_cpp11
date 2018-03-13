@@ -17,6 +17,8 @@ int bar() {
 }
 
 int main() {
+  int x = 1;
+  valueOf(x);
   int (*wsk)() = nullptr;
 
   wsk = &foo;
