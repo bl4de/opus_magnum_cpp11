@@ -6,7 +6,7 @@
 using namespace std;
 using namespace oposy;
 
-class Car {
+class Tcar {
     private:
 
     public:
@@ -16,9 +16,11 @@ class Car {
         string getManufacturer();
 };
 
-string Car::getManufacturer() {
-        return this.manufacturer;
-    }
+string Tcar::getManufacturer() {
+    return manufacturer;
+}
+
 int main() {
-    
+    Tcar a4;
+    valueOf(a4.getManufacturer());
 }
