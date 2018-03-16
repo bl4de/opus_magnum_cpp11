@@ -1,12 +1,16 @@
 #include "Tcar.h"
 #include "oposy.cpp"
 
+void showCar(Tcar &audi) {
+    oposy::valueOf(audi.getDescription());
+}
+
 int main() {
     Tcar audia4;
     audia4.setManufacturer("Audi");
     audia4.setModel("A4 1.8 TFSI");
 
-    oposy::valueOf(audia4.getDescription());
+    showCar(audia4);
 
     Tcar audirs5;
     Tcar *myaudi;
@@ -15,5 +19,5 @@ int main() {
     myaudi->setManufacturer("Audi");
     myaudi->setModel("RS5");
 
-    oposy::valueOf(myaudi->getDescription());
+    showCar(*myaudi);
 }
