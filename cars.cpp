@@ -1,7 +1,7 @@
 #include "Tcar.h"
 #include "oposy.cpp"
 
-void showCar(Tcar &audi) { oposy::valueOf(audi.getDescription()); }
+void showCar(Tcar audi) { oposy::valueOf(audi.getDescription()); }
 
 int main() {
   Tcar audia4{"Audi", "A4 1.8 TFSI"};
