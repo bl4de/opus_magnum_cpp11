@@ -1,11 +1,8 @@
 #include "Tcar.h"
 
-void Tcar::setManufacturer(std::string m) {
-    manufacturer = m;
-}
-
-void Tcar::setModel(std::string m) {
-    model = m;
+Tcar::Tcar(std::string mn, std::string md) {
+    manufacturer = mn;
+    model = md;
 }
 
 std::string Tcar::getDescription() {

@@ -9,9 +9,7 @@ class Tcar {
         std::string model;
 
     public:
-        void setManufacturer(std::string);
-        void setModel(std::string);
-
+        Tcar(std::string, std::string);
         std::string getDescription();
 };
 #endif
