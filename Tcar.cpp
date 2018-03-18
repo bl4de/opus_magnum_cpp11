@@ -9,6 +9,6 @@ void Tcar::setModel(std::string m) {
 }
 
 std::string Tcar::getDescription() {
-    return manufacturer + " " + model + "\n";
+    return manufacturer + " " + model;
 }
 
