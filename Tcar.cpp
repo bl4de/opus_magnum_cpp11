@@ -7,4 +7,4 @@ Tcar::Tcar(std::string mn, std::string md) {
 
 std::string Tcar::getDescription() { return manufacturer + " " + model; }
 
-Tcar::~Tcar() { std::cout << "object " << getDescription() << " deleted!\n"; }
+Tcar::~Tcar() { std::cout << "\n\tobject " << getDescription() << " deleted!\n\n"; }
