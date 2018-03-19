@@ -1,24 +1,25 @@
 #include "Tcar.h"
 #include "oposy.cpp"
 
-void showCar(Tcar* audi) {
+void showCar(Tcar *audi) {
   static int licznik = 1;
   oposy::valueOf(audi->getDescription());
   std::cout << " licznik wysw.: " << licznik++ << "\n";
 }
 
-Tcar ada("Audi", "A4 B5 1.8 ADR 125KM");
+Tcar ada("A4 B5 1.8 ADR 125KM");
 
 int main() {
 
+  ada.showStock();
   showCar(&ada);
 
   {
-    Tcar audia4{"Audi", "A4 1.8 TFSI"};
-    Tcar ada("Audi", "A4 B5 1.8 ADR 125KM");
+    Tcar audia4{"A4 1.8 TFSI"};
+    Tcar ada("A4 B5 1.8 ADR 125KM");
     showCar(&audia4);
 
-    Tcar audirs5{"Audi", "RS5"};
+    Tcar audirs5{"RS5"};
     Tcar *myaudi;
     myaudi = &audirs5;
 
@@ -26,5 +27,6 @@ int main() {
     showCar(&audirs5);
     showCar(&::ada);
     showCar(&ada);
+    ada.showStock();
   }
 }

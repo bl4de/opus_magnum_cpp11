@@ -5,11 +5,13 @@
 #include <string>
 
 class Tcar {
-        std::string manufacturer;
+        static std::string manufacturer;
+        static int stock;
         std::string model;
 
     public:
-        Tcar(std::string, std::string);
+        Tcar(std::string);
+        int showStock();
         ~Tcar();
         std::string getDescription();
 };
