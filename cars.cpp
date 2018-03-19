@@ -27,6 +27,6 @@ int main() {
     showCar(&audirs5);
     showCar(&::ada);
     showCar(&ada);
-    ada.showStock();
+    Tcar::showStock();
   }
 }

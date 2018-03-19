@@ -10,11 +10,6 @@ Tcar::Tcar(std::string md) {
 
 std::string Tcar::getDescription() { return Tcar::manufacturer + " " + model; }
 
-int Tcar::showStock() {
-  std::cout << "\nwypordukowanych egzemplarzy: " << (Tcar::stock++)
-            << std::endl;
-}
-
 Tcar::~Tcar() {
   std::cout << "\n\tobject " << getDescription() << " deleted!\n\n";
 }
