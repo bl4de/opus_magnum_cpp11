@@ -15,8 +15,9 @@ public:
   std::string getDescription();
 
   static int showStock() {
-    std::cout << "\nwypordukowanych egzemplarzy: " << (Tcar::stock++)
+    std::cout << "\nwypordukowanych egzemplarzy: " << (stock++)
               << std::endl;
+    return Tcar::stock;
   }
 };
 #endif
