@@ -11,7 +11,8 @@ Tcar ada("A4 B5 1.8 ADR 125KM");
 
 int main() {
   const Tcar classic("RS2 Quattro");
-//   showCar(&classic); <- error
+  //   showCar(&classic); <- error
+  oposy::valueOf(classic.getDescription());
   classic.showStock();
 
   ada.showStock();

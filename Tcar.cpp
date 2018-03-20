@@ -8,7 +8,9 @@ Tcar::Tcar(std::string md) {
   Tcar::stock++;
 }
 
-std::string Tcar::getDescription() { return Tcar::manufacturer + " " + model; }
+std::string Tcar::getDescription() const {
+  return Tcar::manufacturer + " " + model;
+}
 
 Tcar::~Tcar() {
   std::cout << "\n\tobject " << getDescription() << " deleted!\n\n";

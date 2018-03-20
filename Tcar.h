@@ -12,7 +12,7 @@ class Tcar {
 public:
   Tcar(std::string);
   ~Tcar();
-  std::string getDescription();
+  std::string getDescription() const;
 
   static int showStock() {
     std::cout << "\nwypordukowanych egzemplarzy: " << (stock++)
