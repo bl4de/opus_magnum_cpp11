@@ -10,6 +10,9 @@ void showCar(Tcar *audi) {
 Tcar ada("A4 B5 1.8 ADR 125KM");
 
 int main() {
+  const Tcar classic("RS2 Quattro");
+//   showCar(&classic); <- error
+  classic.showStock();
 
   ada.showStock();
   showCar(&ada);
@@ -27,7 +30,7 @@ int main() {
     showCar(&audirs5);
     showCar(&::ada);
     showCar(&ada);
-    
+
     Tcar::showStock();
   }
 }
