@@ -1,6 +1,5 @@
 #include "Tcar.h"
 
-std::string Tcar::manufacturer = "Audi";
 int Tcar::stock = 0;
 
 Tcar::Tcar(std::string md) {

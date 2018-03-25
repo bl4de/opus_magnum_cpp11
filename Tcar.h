@@ -5,7 +5,7 @@
 #include <string>
 
 class Tcar {
-  static std::string manufacturer;
+  const std::string manufacturer = "Audi";
   static int stock;
   std::string model;
 
