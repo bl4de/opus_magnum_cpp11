@@ -27,4 +27,10 @@ int main() {
   text.insert(12, _newName);
 
   cout << text << endl;
+
+  text.replace(0, text.find("I am"), "");
+  cout << text << endl;
+
+  text.replace(text.find("f, "), text.length(), ", God of Thunder");
+  cout << text << endl;
 }
