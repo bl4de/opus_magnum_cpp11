@@ -20,7 +20,7 @@ int main() {
   try {
     string erased = text.erase(text.find("Let"), 10);
     cout << erased << endl;
-    cout << *text.data() << endl;
+    oposy::valueOf(text);
   } catch (std::out_of_range &e) {
     cout << "Exception: " << e.what() << endl;
   }
