@@ -38,4 +38,13 @@ int main() {
   text.replace(text.find("f, "), text.length(), ", God of Thunder");
   cout << text << endl;
   cout << *text.data() << endl;
+
+  string m1 = "Audi";
+  string m2 = "BMW";
+
+  if (m1 > m2) {
+    cout << m1 << " jest wieksze od " << m2 << endl;
+  } else {
+    cout << m2 << " jest wieksze od " << m1 << endl;
+  }
 }
