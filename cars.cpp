@@ -1,7 +1,7 @@
 #include "Tcar.h"
 #include "oposy.cpp"
 
-void showCar(Tcar *audi) {
+void showCar(const Tcar *audi) {
   static int licznik = 1;
   oposy::valueOf(audi->getDescription());
   std::cout << " licznik wysw.: " << licznik++ << "\n";
@@ -11,7 +11,7 @@ Tcar ada("A4 B5 1.8 ADR 125KM");
 
 int main() {
   const Tcar classic("RS2 Quattro");
-  //   showCar(&classic); <- error
+    showCar(&classic); //<- error
   oposy::valueOf(classic.getDescription());
   classic.showStock();
 
