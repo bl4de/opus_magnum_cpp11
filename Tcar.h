@@ -19,5 +19,7 @@ public:
               << std::endl;
     return Tcar::stock;
   }
+
+  friend void checkManufacturer(const Tcar *audi);
 };
 #endif

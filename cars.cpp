@@ -7,11 +7,16 @@ void showCar(const Tcar *audi) {
   std::cout << " licznik wysw.: " << licznik++ << "\n";
 }
 
+void checkManufacturer(const Tcar *audi) {
+  std::cout << "manufacturer: " << audi->manufacturer << std::endl;
+}
+
 Tcar ada("A4 B5 1.8 ADR 125KM");
 
 int main() {
   const Tcar classic("RS2 Quattro");
-    showCar(&classic); //<- error
+  showCar(&classic); 
+  checkManufacturer(&classic);
   oposy::valueOf(classic.getDescription());
   classic.showStock();
 
